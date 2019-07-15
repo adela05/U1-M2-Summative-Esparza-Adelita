@@ -1,58 +1,31 @@
 package CarInventory.src.main.java;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Inventory {
-    private String make;
-    private String model;
-    private int year;
-    private String color;
-    private int miles;
 
-    //Constructor
-public Inventory(String make, String model, int year, String color, int miles){
-    this.make=make;
-    this.model=model;
-    this.year=year;
-    this.color=color;
-    this.miles=miles;
-}
+    List<Car> carInventory = new ArrayList<Car>();
 
-    //Setter and Getters
-    public String getMake() {
-        return make;
+
+    public void add(Car car) {
+        // must add a new car to the inventory
     }
-
-    public void setMake(String make) {
-        this.make = make;
+    public void delete(Car car){
+        // must delete car info from the list
     }
-    public String getModel() {
-        return model;
+    public List <Car> search(String searchCatagory, String searchString){
+        searchCatagory = searchCatagory;
     }
-
-    public void setModel(String model) {
-        this.model = model;
+    public String toString(){
+        String result = "";
+        // Will print out the array as a list individually
+        for (Car car : carInventory){
+            result = result + car;
+        }
+        return result;
     }
-
-    public int getYear() {
-        return year;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public int getMiles() {
-        return miles;
-    }
-
-    public void setMiles(int miles) {
-        this.miles = miles;
+    public void isListed(){
+        // to print the entire array list on the screen
     }
 }

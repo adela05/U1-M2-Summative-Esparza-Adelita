@@ -12,11 +12,13 @@ public class Main {
         String make = keyboard.nextLine();
         System.out.println("Model: ");
         String model = keyboard.nextLine();
-        System.out.println("Year: ");
-        int year = keyboard.nextInt();
         System.out.println("Color: ");
         String color = keyboard.nextLine();
+        System.out.println("Year: ");
+        int year = keyboard.nextInt();
         System.out.println("Miles on the Odometer: ");
         int miles = keyboard.nextInt();
+        Car car = new Car();
+
     }
 }
