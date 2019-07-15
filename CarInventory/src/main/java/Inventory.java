@@ -5,8 +5,7 @@ import java.util.List;
 
 public class Inventory {
 
-    List<Car> carInventory = new ArrayList<Car>();
-
+    List<Car> carInventory = new ArrayList<>();
 
     public void add(Car car) {
         // must add a new car to the inventory
@@ -14,9 +13,9 @@ public class Inventory {
     public void delete(Car car){
         // must delete car info from the list
     }
-    public List <Car> search(String searchCatagory, String searchString){
-        searchCatagory = searchCatagory;
-    }
+//    public List <Car> search(String searchCatagory, String searchString){
+//        searchCatagory = searchCatagory;
+//    }
     public String toString(){
         String result = "";
         // Will print out the array as a list individually

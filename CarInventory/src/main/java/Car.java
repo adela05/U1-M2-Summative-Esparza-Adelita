@@ -3,18 +3,19 @@ package CarInventory.src.main.java;
 public class Car {
     private String make;
     private String model;
-    private int year;
     private String color;
+    private int year;
     private int miles;
 
-    //Constructor
-    public Car(String make, String model, int year, String color, int miles){
+    //Constructor--
+    public Car(String make, String model, String color, int year, int miles){
         this.make=make;
         this.model=model;
-        this.year=year;
         this.color=color;
+        this.year=year;
         this.miles=miles;
     }
+
     //Setter and Getters
     public String getMake() {
         return make;
